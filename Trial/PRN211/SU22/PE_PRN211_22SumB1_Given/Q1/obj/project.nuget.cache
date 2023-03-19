@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "NFhqGuNkG0rbMVaeOTHckDKT8h9FB5cDAvXlcc4+em/TB1Vsc4GvVkJcdafCU5Y4ILeNc4lb4XXxs0xX9tfjmg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial\\PRN211\\SU22\\PE_PRN211_22SumB1_Given\\Q1\\Q1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

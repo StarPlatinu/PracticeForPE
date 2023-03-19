@@ -1,0 +1,55 @@
+﻿@page
+@model Q2.Page.IndexModel
+@{
+}
+<div class="head">
+
+	<h1>Q2 - List of Products</h1>
+
+</div>
+
+
+<div class="main">
+
+
+	<table class="table table-bordered">
+
+		<thead>
+			<tr>
+				<th width="10px">ProductId</th>
+				<th width="200px"><p>ProductName</p></th>
+				<th width="100px">Category</th>
+				<th width="100px">QuantityPerUnit</th>
+				<th width="100px">UnitPrice</th>
+				<th width="100px">UnitsInStock</th>
+				<th width="100px"></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var service in Model.Products)
+			{
+				<tr>
+					<th>@service.ProductId</th>
+					<th><p>@service.ProductName</p></th>
+					<th>@service.Category.CategoryName</th>
+					<th>@service.QuantityPerUnit</th>
+					<td>@service.UnitPrice</td>
+					<td>@service.UnitsInStock</td>
+					<td><a href="javascript:void(0)" onclick="onDelte(@service.ProductId)">Delete</a></td>
+
+				</tr>
+			}
+			
+		</tbody>
+	</table>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+	<script>
+		var connection = new signalR.HubConnectionBuilder().withUrl("/productHub").build();
+		connection.start();
+		function onDelte(movieId) {
+			connection.invoke("DeleteProduct", movieId);
+		}
+		connection.on("LoadProduct", () => {
+			location.reload();
+		})
+	</script>

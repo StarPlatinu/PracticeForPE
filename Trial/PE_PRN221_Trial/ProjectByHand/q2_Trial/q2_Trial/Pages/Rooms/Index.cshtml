@@ -1,0 +1,48 @@
+﻿@page
+@model q2_Trial.Pages.Rooms.IndexModel
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].Square)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].Floor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].Comment)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Room) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Square)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Floor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Title">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Title">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Title">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

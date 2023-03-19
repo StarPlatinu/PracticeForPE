@@ -1,0 +1,56 @@
+﻿<Window x:Class="Q1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Q1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,63,-366,-139">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="186*"/>
+            <ColumnDefinition Width="464*"/>
+            <ColumnDefinition Width="223*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0,-56,390,280" Background="Aqua" Grid.ColumnSpan="4">
+            <Label Content="Order Id" />
+            <TextBox IsEnabled="True" TextWrapping="Wrap" Width="433" x:Name="OrderId" Text="{Binding Id}" DataContext="{Binding SelectedItem, ElementName=List_emp}" Height="19"/>
+            <Label Content="Customer"/>
+            <ComboBox x:Name="Customer" Width="430" Height="32" RenderTransformOrigin="0.5,0.5">
+               
+            </ComboBox>
+            <Label Content="Employee"/>
+            <ComboBox x:Name="Employee" Width="430" Height="32" RenderTransformOrigin="0.5,0.5">
+
+              
+            </ComboBox>
+            <Label Content="Required Date"/>
+            <DatePicker x:Name="Rd" Text="{Binding Dob}" DataContext="{Binding SelectedItem, ElementName=List_emp}"/>
+            <Label Content="Ship address"/>
+            <TextBox  x:Name="sa" TextWrapping="Wrap" Text="" Width="434" Height="24"/>
+
+
+
+
+        </StackPanel>
+        <Button Content="Refresh" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="128" Click="Button_Add" Height="41" Grid.ColumnSpan="2"/>
+        <Button Content="Add" HorizontalAlignment="Left" VerticalAlignment="Center" Width="119" Click="Button_Import" Height="41" Margin="124,0,0,0" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button Content="Edit " HorizontalAlignment="Left" Margin="62,0,0,0" VerticalAlignment="Center" Width="159" Click="Button_Db" Grid.ColumnSpan="2" Height="41" Grid.Column="2"/>
+        <ListView  Margin="0,352,0,0" Name="List_emp"  Grid.ColumnSpan="5" SelectionChanged="List_emp_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Order Id" Width="130" DisplayMemberBinding="{Binding Path=OrderId}"/>
+                    <GridViewColumn Header="Customer" Width="130" DisplayMemberBinding="{Binding Path=Customer}"/>
+                    <GridViewColumn Header="Employee" Width="130"  DisplayMemberBinding="{Binding Path=Dob,StringFormat='dd/mm/yyyy'}"/>
+                    <GridViewColumn Header="OrderDate" Width="260" DisplayMemberBinding="{Binding Path=OrderDate}" />
+                    <GridViewColumn Header="RequiredDate" Width="130" DisplayMemberBinding="{Binding Path=Rd,StringFormat='dd/mm/yyyy'}"/>
+                    <GridViewColumn Header="ShipAddress" Width="130" DisplayMemberBinding="{Binding Path=ShipAddress}"/>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

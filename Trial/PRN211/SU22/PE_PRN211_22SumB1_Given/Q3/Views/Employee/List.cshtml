@@ -1,0 +1,98 @@
+﻿@using Q3.Models
+@{
+    List<Department> departments = ViewBag.Departments;
+}
+@model List<Employee>
+<style>
+    .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+        .styled-table thead tr {
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+            .styled-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            .styled-table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+
+            .styled-table tbody tr.active-row {
+                font-weight: bold;
+                color: #009879;
+            }
+
+    .main {
+        display: flex;
+    }
+
+    .active {
+        font-weight: 1000;
+        font-size: 20px;
+    }
+</style>
+
+
+
+<div class="main">
+    <div>
+        <h1>List of Departments</h1>
+        @foreach (var item in departments)
+        {
+            <div>
+                <a href="/Employee/List/@item.DepartmentId" @(ViewBag.id==item.DepartmentId?"class=active":"")>@item.DepartmentName</a>
+            </div>
+        }
+    </div>
+    <div>
+        @if (Model.Count > 0)
+        {
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>EmployeeId</th>
+                        <th>EmployeeName</th>
+                        <th>TitleOfCourtesy</th>
+                        <th>Title</th>
+                        <th>Department</th>
+                        <th>BirthDate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var e in Model)
+                    {
+                        <tr>
+                            <td>@e.EmployeeId</td>
+                            <td>@e.FirstName @e.LastName</td>
+                            <td>@e.TitleOfCourtesy</td>
+                            <td>@e.Title</td>
+                            <td>@e.Department.DepartmentName</td>
+                            <td>@e.BirthDate?.ToString("dd/MM/yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <h1>No employees in department</h1>
+        }
+    </div>
+</div>

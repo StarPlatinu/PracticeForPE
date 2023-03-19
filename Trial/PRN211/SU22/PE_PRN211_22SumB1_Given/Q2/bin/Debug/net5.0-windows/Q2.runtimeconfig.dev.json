@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\vietd\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\vietd\\.nuget\\packages"
+    ]
+  }
+}

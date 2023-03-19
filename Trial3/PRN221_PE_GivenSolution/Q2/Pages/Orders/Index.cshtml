@@ -1,0 +1,60 @@
+﻿@page
+@model Q2.Pages.Orders.IndexModel
+@{
+}
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                   OrderId
+                </th>
+                <th>
+                  Customer
+                </th>
+                <th>
+                  Employee
+                </th>
+                <th>
+                   OrderDate
+                </th>
+                 <th>
+                  RequiredDate
+                </th>
+                <th>
+                    ShipedAddress
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @Model.OrderVM)
+            {
+                <tr>
+                    <td>
+                      @item.OrderId
+                    </td>
+                    <td>
+                        @item.CustomerId
+                    </td>
+                      <td>
+                      @item.EmployeeId
+                    </td>
+                    <td>
+                        @item.OrderDate
+                    </td>
+                    <td>
+                        @item.RequiredDate
+                    </td>
+                    <td>
+                        @item.ShipAddress
+                    </td>               
+                    <td>                     
+                        <a asp-page="./Delete" asp-route-id="@item.OrderId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "9hh8SaVzRXfDY0QfhGrBOqU+6W7MbYdKlegQ8npTjZQ=",
+  "Source": "Q2",
+  "BasePath": "_content/Q2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Q2\\wwwroot",
+      "Source": "Q2",
+      "ContentRoot": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\wwwroot\\",
+      "BasePath": "_content/Q2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Q2.styles.css",
+      "SourceId": "Q2",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Q2",
+      "RelativePath": "Q2.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Q2.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Q2.bundle.scp.css",
+      "SourceId": "Q2",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Q2",
+      "RelativePath": "Q2.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Q2.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\wwwroot\\css\\mystyle.css",
+      "SourceId": "Q2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\wwwroot\\",
+      "BasePath": "_content/Q2",
+      "RelativePath": "css/mystyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\mystyle.css"
+    },
+    {
+      "Identity": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\wwwroot\\js\\site.js",
+      "SourceId": "Q2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Trial_2\\PRN221_PE_GivenSolution\\Q2\\wwwroot\\",
+      "BasePath": "_content/Q2",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}

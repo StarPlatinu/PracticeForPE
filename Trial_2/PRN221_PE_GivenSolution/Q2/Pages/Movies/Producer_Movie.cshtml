@@ -1,0 +1,57 @@
+﻿@page
+@model Q2.Pages.Movies.Producer_MovieModel
+@{
+}
+<h1 class="mt3 mb-3">List of movies</h1>
+<table>
+    <tr></tr>
+</table>
+
+        <div class="row d-flex">
+            <div style="width:30%;float:left" >
+            <h2 class="mt-0">Producers</h3>
+            @foreach (var item in Model.Directors)
+            {
+                <div>  <a href="#">@item.FullName</a></div>
+            }
+            </div>     
+         <div style="width:70%;float:right" >
+                <table class="table">
+                    <thead>
+                        <tr>
+                    <th >Title</th>
+                    <th>ReleaseDate</th>
+                    <th>Description</th>
+                    <th>Language</th>
+                    <th>Director</th>
+                    <th>Producer</th>
+                    <th>Stars</th>
+                    <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                @foreach (var movie in Model.Movies)
+                {
+                    <tr>
+                        <td>@movie.Title</td>
+                        <td>@movie.ReleaseDate</td>
+                        <td>@movie.Description</td>
+                        <td>@movie.Language</td>
+                        <td>@movie.Director.FullName</td>
+                        <td>@movie.Producer.Name</td>
+                        <td style="width:200px">
+                            @foreach (var item in movie.Stars)
+                            {
+                                @item.FullName<br />
+                            }
+                        </td>
+                        <td><a href="/Movies/Producer_Movie?deleteid=@movie.Id&id=@movie.Director.Id">Delete</a></td>
+                    </tr>
+                }
+                {
+                    
+                }             
+                    </tbody>
+                </table>
+            </div>
+        </div>

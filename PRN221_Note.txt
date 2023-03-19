@@ -1,0 +1,65 @@
+- Install the **`dotnet-ef`** tool if it's not already installed. You can do this by running **`dotnet tool install --global dotnet-ef`**.
+- If the **`dotnet-ef`** tool is already installed, make sure it's up-to-date by running **`dotnet tool update --global dotnet-ef`**.
+- `dotnet add package Microsoft.EntityFrameworkCore.design`
+- `dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
+- `dotnet add package Microsoft.Extensions.Configuration`
+- `dotnet add package Microsoft.Extensions.Configuration.Json`
+
+### **`dotnet ef dbcontext scaffold "server =(local); database = PRN221_Spr22;uid=sa;pwd=sa;TrustServerCertificate=Yes;TrustServerCertificate=True"Microsoft.EntityFrameworkCore.SqlServer --output-dir Models`**
+
+TrustServerCertificate=Yes
+
+`dotnet ef dbcontext scaffold "server=(local);database=MyStock;user id=sa;password=sa;Encrypt=True;TrustServerCertificate=Yes;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models`
+
+
+========
+Step 1. Create Project
+Step 2. Work with Entity Framework 
+Step 3. Create SignalR Hub and configure SignalR
+Step 4. Build CRUD functions combined with SignalR
+Step 5. Build and run Project. Test all CRUD actions 
+
+- `dotnet add package Microsoft.EntityFrameworkCore.design`
+- `dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
+- dotnet add package Microsoft.EntityFrameworkCore.Tools
+- dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package Microsoft.Extensions.Configuration.Json
+
+
+Server=(localdb)\\mssqllocaldb;Database=SignalRCrud.Data;Trusted_Connection=True;MultipleActiveResultSets=true
+
+dotnet ef dbcontext scaffold "server =(local); database = PostManagement;uid=sa;pwd=sa;TrustServerCertificate=Yes;TrustServerCertificate=True"Microsoft.EntityFrameworkCore.SqlServer --output-dir Models
+
+
+builder.Services.AddDbContext<ApplicationDBContext>(options =>
+
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationDBContext") ?? throw new InvalidOperationException("Connection string 'ApplicationDBContext' not found.")));
+
+
+*****
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = null;
+});
+
+builder.Services.AddDbContext<Prn221Spr22Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection")));
+builder.Services.AddScoped<Prn221Spr22Context>();
+
+***builder.Services.AddSignalR();
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+app.MapHub<SignalRServer>("/signalRServer");
+app.MapRazorPages();
+
+app.Run();
+
+****
+dotnet ef dbcontext scaffold -o Models -f -d "Persist Security Info=False;User ID=sa;Password=sa;Initial Catalog=PRN_Spr23_B1;Data Source=.;TrustServerCertificate=True;Trusted_Connection=True;Connection Timeout=100000" "Microsoft.EntityFrameworkCore.SqlServer" 
+
+****
+
