@@ -1,0 +1,44 @@
+﻿<Window x:Class="WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="WindowSaleManagement" Height="600" Width="800">
+    <Grid Background="Orange">
+        <Grid Margin="0,0,555,-17">
+            <Button Name="btnLogout" Content="Log Out" FontSize="18"  
+                    Background="Crimson" Foreground="Azure" FontFamily="Times New Roman"
+                    HorizontalAlignment="Left" 
+                    Width="110" Click="btnLogout_Click" Margin="12,509,0,38" />
+        </Grid>
+        <Grid Margin="138,49,144,96">
+            <Button Content="Members" FontFamily="Times New Roman"
+                    Background="Crimson" Foreground="White"
+                    HorizontalAlignment="Left" Margin="23,271,0,0" VerticalAlignment="Top" 
+                    Height="40" Width="140" Click="Button_Member"/>
+            <Button Content="Orders" FontFamily="Times New Roman"
+                    Background="Crimson" Foreground="White"
+                    HorizontalAlignment="Left" Margin="351,271,0,0" VerticalAlignment="Top" 
+                    Height="40" Width="140" Click="Button_Order"/>
+            <Button Content="Products" FontFamily="Times New Roman"
+                    Background="Crimson" Foreground="White"
+                    HorizontalAlignment="Center" Margin="0,271,0,0" VerticalAlignment="Top" 
+                    RenderTransformOrigin="-0.121,-0.389" 
+                    Height="40" Width="140" Click="Button_Product"/>
+            <Label x:Name="lbTitle_Welcome" Foreground="White" FontWeight="Bold"
+                FontSize="30" Content="Welcome back" FontFamily="Times New Roman"
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Margin="23,10,0,0"/>
+            <Label x:Name="lbTitle_Ad" Foreground="White" FontWeight="Bold"
+                FontSize="20" Content="Administrator!" FontFamily="Times New Roman"
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Margin="23,50,0,0"/>
+            <Label x:Name="lbTitle_ChooseServices" Foreground="White" FontWeight="Bold"
+                FontSize="20" Content="Please choose one of the following services:" FontFamily="Times New Roman"
+                HorizontalAlignment="Center" VerticalAlignment="Center" Width="384"/>
+        </Grid>
+    </Grid>
+</Window>

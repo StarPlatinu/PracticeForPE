@@ -1,0 +1,56 @@
+﻿@page
+@model SaleManager.Pages.Categories.IndexModel
+@{
+}
+
+
+<h1>Categories</h1>
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Categories List</h2>
+        </div>
+        <div class="col-6">
+          <a asp-page="create" class="btn btn-primary" >  
+              Create New Category
+          </a>
+        </div>
+            <br />
+            <div>
+                <table class="table table-bordered" width="100%">
+                    <thead>
+                        <tr>
+                            <th>
+                                Category Name
+                            </th>
+                            <th>
+                                Display Order
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var category in Model.Categories)
+                        {
+                            <tr>
+                                <td width="50%">@category.Name</td>
+                                <td width="30%">@category.DisplayOrder</td>
+                                <td class="d-flex">
+                                    <a asp-page="Edit" asp-route-id="@category.Id" class="btn btn-primary mx-2" >
+                                   Edit 
+                                    </a>
+                                <a asp-page="Delete" asp-route-id="@category.Id" class="btn btn-primary mx-2">
+                                    Delete
+                                </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+       
+        
+      
+    </div>
+</div>

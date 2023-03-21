@@ -1,0 +1,33 @@
+﻿@page
+@model SaleManager.Pages.Categories.DeleteModel
+
+<form method="post">
+    <input hidden asp-for="Category.Id" />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary pe-3" >Delete Category</h2>
+            <hr />
+        </div>
+       
+        <div class="mb-3">
+            <label asp-for="Category.Name"></label>
+            <input class="form-control" disabled asp-for="@Model.Category.Name" type="text"/>
+           
+        </div>
+        <div class="mb-3">
+            <label asp-for="Category.DisplayOrder"></label>
+            <input class="form-control" disabled asp-for="@Model.Category.DisplayOrder" type="text"/>
+          
+        </div>
+
+        <button type="submit" class="btn btn-danger" >Delete</button>
+        <a asp-page="Index" class="btn btn-secondary">Back To List</a>
+    </div>
+</form>
+
+@section Scripts
+    {
+        @{
+            <partial name="_ValidationScriptsPartial" />
+        }
+}

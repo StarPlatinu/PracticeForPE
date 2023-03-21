@@ -1975,19 +1975,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Minh Hieu Pham\\.nuget\\packages\\": {}
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Minh Hieu Pham\\Desktop\\PE_PRN221_SP23\\PRN221_PE_GivenSolution\\Q2\\Q2.csproj",
+      "projectUniqueName": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Solution2023\\PRN221_PE_GivenSolution\\Q2\\Q2.csproj",
       "projectName": "Q2",
-      "projectPath": "C:\\Users\\Minh Hieu Pham\\Desktop\\PE_PRN221_SP23\\PRN221_PE_GivenSolution\\Q2\\Q2.csproj",
-      "packagesPath": "C:\\Users\\Minh Hieu Pham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Minh Hieu Pham\\Desktop\\PE_PRN221_SP23\\PRN221_PE_GivenSolution\\Q2\\obj\\",
+      "projectPath": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Solution2023\\PRN221_PE_GivenSolution\\Q2\\Q2.csproj",
+      "packagesPath": "C:\\Users\\Thinkpad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Thinkpad\\Documents\\FULearning\\PRN221\\Application\\Solution2023\\PRN221_PE_GivenSolution\\Q2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Minh Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Thinkpad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2043,7 +2043,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

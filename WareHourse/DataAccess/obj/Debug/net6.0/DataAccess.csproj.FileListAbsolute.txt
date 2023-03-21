@@ -1,0 +1,15 @@
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\Thinkpad\Documents\FULearning\PRN221\Application\WareHourse\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
